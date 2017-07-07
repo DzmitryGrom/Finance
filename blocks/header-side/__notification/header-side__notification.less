@@ -1,0 +1,26 @@
+.header-side__notification {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  &_active:before {
+    content: "";
+    display: block;
+    background-color: #da5c3e;
+    border-radius: 500px;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 0;
+    left: 17px;
+  }
+  > .tooltip {
+    margin-top: -2px;
+    display: none;
+  }
+  &:hover,
+  &.hover {
+    > .tooltip {
+      display: inherit;
+    }
+  }
+}

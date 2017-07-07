@@ -1,0 +1,106 @@
+.list__item{
+  font-family: ProximaNovaReg;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-top: .4em;
+  padding-bottom: .4em;
+  border: 1px solid transparent;
+  color: transparent;
+  &:hover  .textarea {
+    background-color: #ecfbff;
+    border-radius: 6px;
+    cursor: pointer;
+    & ~ .delete {
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+  .textarea {
+    border: none;
+    margin-bottom: 0;
+    display: inline-block;
+    resize: none;
+    color: #556066;
+    line-height: 1;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    padding: 3px 5px;
+    font-size: 15px;
+    font-family: ProximaNovaLight;
+  }
+  &_hovered{
+    cursor: pointer;
+    &:hover{
+      background-color: #f9f9f9;
+      .text {
+        color: #000000;
+      }
+      .icon {
+        display: inline-block;
+      }
+    }
+  }
+  &_color_default{
+    color: #b5b5b5;
+  }
+  &_color_warning{
+    color: #da5c3e;
+  }
+  &_color_info{
+    color: #61a3da;
+  }
+  
+  &_dividered{
+    &_top{
+      border-top-color: #f6f6f6;
+      margin-top: 8px;
+      padding: 11px 0 9px;
+      .fa, .icon, .text {
+        vertical-align: middle;
+      }
+      .icon-plus {
+        margin-right: 6px;
+      }
+    }
+  }
+  
+  > .text{
+    color: #979797;
+  }
+
+  &_iconed{
+    margin-left: 0;
+    padding-left: 2em;
+    list-style: none;
+    position: relative;
+    .fa, .icon {
+      font-size: 16px;
+      display: none;
+      position: absolute;
+      color: #979797;
+      width: 40px;
+      text-align: center;
+      height: 100%;
+      line-height: 100%;
+    }
+    &_left {
+      .fa, .icon {
+        left: 5px;
+      }
+    }
+    &_right {
+      .fa, .icon {
+        right: 5px;
+      }
+    }
+  
+  }
+  .delete {
+    display: none;
+    position: absolute;
+    right: 55px;
+    top: 0px;
+    z-index: 2;
+    padding: 5px 15px;
+  }
+}

@@ -1,0 +1,46 @@
+.category__item_icon{
+  position: relative;
+
+  .fa,
+  .icon-group,
+  .icon {
+    min-width: 36px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-right: -1px;
+    display: inline-block;
+    &.icon-status {
+      margin-right: -4px;
+    }
+  }
+  .icon-social {
+    color: #d8e2e9;
+    vertical-align: middle;
+    margin-top: -2px;
+    font-size: 21px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 2px;
+      border-right: 1px solid #f0f0f0;
+    }
+  }
+  .icon-group {
+    vertical-align: middle;
+    font-size: 20px;
+  }
+  > input{
+    padding-left: 40px;
+    margin-left: -39px;
+  }
+  .i-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 1
+  }
+}

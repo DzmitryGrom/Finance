@@ -1,0 +1,51 @@
+.category__item {
+  display: block;
+  color: #7e7e7e;
+  font-family: "ProximaNovaLight";
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 34px;
+  position: relative;
+  &.category__item_drop {
+    input {
+      cursor: pointer;
+      margin-right: -27px;
+      padding-right: 28px;
+    }
+  }
+  .text {
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+  }
+  &-title {
+    font-size: 15px;
+    font-family: ProximaNovaLight;
+    color: #afbcc2;
+    margin: 14px 0 0px;
+    &_list {
+      margin-bottom: 30px;
+    }
+  }
+  &-description {
+    font-size: 14px;
+    font-family: ProximaNovaReg;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 52px 0 30px;
+    letter-spacing: 1px;
+  }
+  .icon-pencil {
+    display: none;
+    padding: 10px;
+  }
+  &:hover {
+    .icon-pencil {
+      display: inline-block;
+    }
+  }
+  
+  &_full-width {
+    flex: 0 0 100%;
+  }
+}

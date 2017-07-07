@@ -1,0 +1,193 @@
+.article {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  &_colums {
+    .content {
+      flex: 1 1 300px;
+    }
+  }
+  .caption {
+    margin-bottom: 20px;
+  }
+  &__description {
+    flex: 1 1 100%;
+    margin: @zero;
+    padding: @value-25-30;
+    font-weight: @fw-norm;
+    font-size: @fs-20;
+    color: @col-black;
+  }
+  &__content {
+    padding: 24px 24px 17px 24px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: "ProximaNovaReg";
+    font-size: 14px;
+    flex: 1 1 500px;
+  }
+  &__link {
+    display: block;
+    cursor: pointer;
+    color: #616161;
+    font-size: 15px;
+    font-family: ProximaNovaReg;
+    text-decoration: none;
+    position: relative;
+    top: -5px;
+	.icon-unlink {
+      color: black; 
+	}
+    .text {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+  .content {
+    &__caption {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 10px 0;
+      &-text {
+        display: inline-block;
+        font-family: "ProximaNovaBold";
+        font-size: 21px;
+        font-weight: normal;
+        .text, .i-icon, .fa {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .icon-star {
+          font-size: 35px;
+        }
+        .icon-pin {
+          font-size: 50px;
+        }
+        .i-icon {
+          margin-left: -10px;
+        }
+        
+      }
+      &-action {
+        font-size: 0;
+        cursor: pointer;
+        padding: 20px 10px;
+        position: relative;
+        .tooltip {
+          display: none;
+          margin-top: -10px;
+        }
+        &:hover,
+        &.hover {
+          .tooltip {
+            display: block;
+          }
+        }
+      }
+    }
+    &__text {
+      color: #616161;
+      font-family: "ProximaNovaReg";
+      font-size: 15px;
+      line-height: 23px;
+      padding-bottom: 28px; // height of footer
+      img {
+        max-width: 450px;
+      }
+      &_collapsed {
+        overflow: hidden;
+        height: ~'calc(23px * 3)'; // 24px line height, 3 lines
+      }
+    }
+   
+  }
+  .sidebar {
+    display: inline-block;
+    padding: 28px 5px 23px 37px;
+    img {
+      border-radius: 5px;
+    }
+    .content__caption-text {
+      font-size: 20px;
+      font-family: ProximaNovaReg;
+      line-height: 20px;
+      display: block;
+      margin: 0;
+      color: #9aa5ab;
+    }
+    .text {
+      font-family: ProximaNovaLight;
+      font-size: 14px;
+      line-height: 24px;
+      color: #9aa5ab;
+      margin: 0;
+    }
+  }
+  &_cards {
+        margin-top: 105px;
+        box-shadow: 0 0 40px rgba(158, 157, 163, 0.8);
+        min-height: 620px;
+        .article__content {
+          padding: 110px 0 87px 0;
+          flex: 1 0 auto;
+          text-align: center;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          position: relative;
+          
+          &_steps {
+            padding: 60px 0 87px 0;
+            .category__item-description {
+              margin: 57px 0 36px;
+            }
+            .category__item-label {
+              text-align: left;
+              padding-left: 10px;
+              padding-right: 10px;
+              margin: 15px auto 15px;
+              max-width: 294px;
+              box-sizing: border-box;
+            }
+          }
+        }
+        .category__item {
+          width: 294px;
+          margin: 7px auto 30px;
+          &-label {
+            margin: -15px 0 30px;
+          }
+          &_btns {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+          }
+        }
+        .button_success {
+          width: 180px;
+          margin: 0px auto 0px;
+          height: 40px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          align-self: center;
+          .icon {
+            font-size: 20px;
+          }
+        }
+        .sidebar {
+          padding: 0px;
+          flex: 0 0 650px;
+          left: 0;
+          img {
+            border-bottom-left-radius: 0px; 
+            border-top-left-radius: 0px; 
+          }
+        }
+      }
+}
