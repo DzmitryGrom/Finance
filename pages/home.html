@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="app">
+<html lang="en">
 
 <head>
   <title>home</title>
@@ -10,7 +10,7 @@
 
 </head>
 
-<body ng-controller="TestController">
+<body>
   <div class="header">
     <h1 class="header__logo">
       <svg width="30px" height="42px" viewBox="0 0 30 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -45,6 +45,337 @@
     <div class="content">
       <div class="article" style="height: 381px;">
         <h2 class="article__description">Рост компании</h2>
+      </div>
+      <div class="article article_space-around article_transparent">
+        <div class="article__item">
+          <h2 class="article__description">Ближайшие расходы</h2>
+          <table class="datagrid">
+            <thead class="datagrid__header">
+              <tr class="row">
+                <th class="row__cell">Назначение</th>
+                <th class="row__cell">Дата</th>
+                <th class="row__cell">Сумма</th>
+                <th class="row__cell"></th>
+              </tr>
+            </thead>
+            <tbody class="datagrid__body">
+              <tr class="row">
+                <td class="row__cell">Оплата офиса</td>
+                <td class="row__cell">13 Mar 2017</td>
+                <td class="row__cell">$73430</td>
+                <td class="row__cell"><i class="icon-arrow icon-arrow_to-right"></i></td>
+              </tr>
+              <tr class="row">
+                <td class="row__cell">Оплата офиса</td>
+                <td class="row__cell">13 Mar 2017</td>
+                <td class="row__cell">$73430</td>
+                <td class="row__cell"><i class="icon-arrow icon-arrow_to-right"></i></td>
+              </tr>
+              <tr class="row">
+                <td class="row__cell">Оплата офиса</td>
+                <td class="row__cell">13 Mar 2017</td>
+                <td class="row__cell">$73430</td>
+                <td class="row__cell"><i class="icon-arrow icon-arrow_to-right"></i></td>
+              </tr>
+              <tr class="row">
+                <td class="row__cell">Оплата офиса</td>
+                <td class="row__cell">13 Mar 2017</td>
+                <td class="row__cell">$73430</td>
+                <td class="row__cell"><i class="icon-arrow icon-arrow_to-right"></i></td>
+              </tr>
+            </tbody>
+            <tfoot class="datagrid__footer">
+              <tr class="row">
+                <td class="row__cell"><a href="#" class="link">Все расходы <i class="icon-arrow icon-arrow_to-right"></i></a></td>
+                <td class="row__cell"></td>
+                <td class="row__cell"></td>
+                <td class="row__cell"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="article__item">
+          <h2 class="article__description">Ближайшие сверки</h2>
+          <table class="datagrid">
+            <thead class="datagrid__header">
+              <tr class="row">
+                <th class="row__cell">КОМПАНИЯ</th>
+                <th class="row__cell">Дата</th>
+                <th class="row__cell">Сумма</th>
+                <th class="row__cell"></th>
+              </tr>
+            </thead>
+            <tbody class="datagrid__body">
+              <tr class="row">
+                <td class="row__cell">Project Name</td>
+                <td class="row__cell">13 Mar 2017</td>
+                <td class="row__cell">$73430</td>
+                <td class="row__cell"><i class="icon-arrow icon-arrow_to-right"></i></td>
+              </tr>
+              <tr class="row">
+                <td class="row__cell">Project Name</td>
+                <td class="row__cell">13 Mar 2017</td>
+                <td class="row__cell">$73430</td>
+                <td class="row__cell"><i class="icon-arrow icon-arrow_to-right"></i></td>
+              </tr>
+              <tr class="row">
+                <td class="row__cell">Project Name</td>
+                <td class="row__cell">13 Mar 2017</td>
+                <td class="row__cell">$73430</td>
+                <td class="row__cell"><i class="icon-arrow icon-arrow_to-right"></i></td>
+              </tr>
+              <tr class="row">
+                <td class="row__cell">Project Name</td>
+                <td class="row__cell">13 Mar 2017</td>
+                <td class="row__cell">$73430</td>
+                <td class="row__cell"><i class="icon-arrow icon-arrow_to-right"></i></td>
+              </tr>
+            </tbody>
+            <tfoot class="datagrid__footer">
+              <tr class="row">
+                <td class="row__cell"><a href="#" class="link">Все сверки <i class="icon-arrow icon-arrow_to-right"></i></a></td>
+                <td class="row__cell"></td>
+                <td class="row__cell"></td>
+                <td class="row__cell"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <h2 class="content__title">Общее</h2>
+      <div class="article" style="height: 381px;">
+        <h2 class="article__description">Приход / расход</h2>
+      </div>
+      <div class="article article_flex-start article_transparent">
+        <div class="article__card">
+          <div class="action"> 
+            <i class="icon-menu"></i>
+            <div class="tooltip" style="width: 166px; right: -28px;top: 30px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text"><span class="text">Просмотреть детально</span> </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="article__description">Ожидаемый приход</h2>
+          <span class="value value_big">2 500$</span>
+          <span class="value value_small value_small-green">
+            +12%
+            <span class="icon-triangle icon-triangle_green"></span>
+          </span>
+          <span class="value value_small value_small-red">
+            -12%
+            <span class="icon-triangle icon-triangle_red"></span>
+          </span>
+        </div>
+        <div class="article__card">
+          <div class="action"> 
+            <i class="icon-menu"></i>
+            <div class="tooltip" style="width: 166px; right: -28px;top: 30px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text"><span class="text">Просмотреть детально</span> </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="article__description">Ожидаемый приход</h2>
+          <span class="value value_big">2 500$</span>
+          <span class="value value_small value_small-green">
+            +12%
+            <span class="icon-triangle icon-triangle_green"></span>
+          </span>
+          <span class="value value_small value_small-red">
+            -12%
+            <span class="icon-triangle icon-triangle_red"></span>
+          </span>
+        </div>
+      </div>
+      <h2 class="content__title">Компании</h2>
+      <div class="article" style="height: 381px;">
+        <h2 class="article__description">Приход / расход</h2>
+      </div>
+      <div class="article article_flex-start article_transparent">
+        <div class="article__card">
+          <div class="action"> 
+            <i class="icon-menu"></i>
+            <div class="tooltip" style="width: 166px; right: -28px;top: 30px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text"><span class="text">Просмотреть детально</span> </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="article__description">Project Name</h2>
+          <span class="value value_big">2 500$</span>
+          <span class="value value_small value_small-green">
+            +12%
+            <span class="icon-triangle icon-triangle_green"></span>
+          </span>
+          <span class="value value_small value_small-red">
+            -12%
+            <span class="icon-triangle icon-triangle_red"></span>
+          </span>
+        </div>
+        <div class="article__card">
+          <div class="action"> 
+            <i class="icon-menu"></i>
+            <div class="tooltip" style="width: 166px; right: -28px;top: 30px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text"><span class="text">Просмотреть детально</span> </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="article__description">Project Name</h2>
+          <span class="value value_big">2 500$</span>
+          <span class="value value_small value_small-green">
+            +12%
+            <span class="icon-triangle icon-triangle_green"></span>
+          </span>
+          <span class="value value_small value_small-red">
+            -12%
+            <span class="icon-triangle icon-triangle_red"></span>
+          </span>
+        </div>
+        <div class="article__card">
+          <div class="action"> 
+            <i class="icon-menu"></i>
+            <div class="tooltip" style="width: 166px; right: -28px;top: 30px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text"><span class="text">Просмотреть детально</span> </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="article__description">Project Name</h2>
+          <span class="value value_big">2 500$</span>
+          <span class="value value_small value_small-green">
+            +12%
+            <span class="icon-triangle icon-triangle_green"></span>
+          </span>
+          <span class="value value_small value_small-red">
+            -12%
+            <span class="icon-triangle icon-triangle_red"></span>
+          </span>
+        </div>
+        <div class="article__card">
+          <div class="action"> 
+            <i class="icon-menu"></i>
+            <div class="tooltip" style="width: 166px; right: -28px;top: 30px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text"><span class="text">Просмотреть детально</span> </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="article__description">Project Name</h2>
+          <span class="value value_big">2 500$</span>
+          <span class="value value_small value_small-green">
+            +12%
+            <span class="icon-triangle icon-triangle_green"></span>
+          </span>
+          <span class="value value_small value_small-red">
+            -12%
+            <span class="icon-triangle icon-triangle_red"></span>
+          </span>
+        </div>
+      </div>
+      <h2 class="content__title">Сотрудники</h2>
+      <div class="article" style="height: 381px;">
+        <h2 class="article__description">Приход / расход</h2>
+      </div>
+      <div class="article article_flex-start article_transparent">
+        <div class="article__card">
+          <div class="action"> 
+            <i class="icon-menu"></i>
+            <div class="tooltip" style="width: 166px; right: -28px;top: 30px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text"><span class="text">Просмотреть детально</span> </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="article__description">Роберт Лисовский</h2>
+          <span class="value value_big">2 500$</span>
+          <span class="value value_small value_small-green">
+            +12%
+            <span class="icon-triangle icon-triangle_green"></span>
+          </span>
+          <span class="value value_small value_small-red">
+            -12%
+            <span class="icon-triangle icon-triangle_red"></span>
+          </span>
+        </div>
+        <div class="article__card">
+          <div class="action"> 
+            <i class="icon-menu"></i>
+            <div class="tooltip" style="width: 166px; right: -28px;top: 30px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text"><span class="text">Просмотреть детально</span> </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="article__description">Роберт Лисовский</h2>
+          <span class="value value_big">2 500$</span>
+          <span class="value value_small value_small-green">
+            +12%
+            <span class="icon-triangle icon-triangle_green"></span>
+          </span>
+          <span class="value value_small value_small-red">
+            -12%
+            <span class="icon-triangle icon-triangle_red"></span>
+          </span>
+        </div>
+        <div class="article__card">
+          <div class="action"> 
+            <i class="icon-menu"></i>
+            <div class="tooltip" style="width: 166px; right: -28px;top: 30px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text"><span class="text">Просмотреть детально</span> </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <h2 class="article__description">Роберт Лисовский</h2>
+          <span class="value value_big">2 500$</span>
+          <span class="value value_small value_small-green">
+            +12%
+            <span class="icon-triangle icon-triangle_green"></span>
+          </span>
+          <span class="value value_small value_small-red">
+            -12%
+            <span class="icon-triangle icon-triangle_red"></span>
+          </span>
+        </div>
+        
       </div>
     </div>
   </div>

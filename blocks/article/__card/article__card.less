@@ -1,0 +1,40 @@
+.article__card {
+  flex: 0 0 303px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  margin: 0 2em 2em 0;
+  > .action {
+    top: 25px;
+    right: 30px;
+  }
+  .article__description {
+    font-size: @fs-16;
+    padding: @zero;
+    margin-bottom: 6px;
+  }
+  .value {
+    display: inline-block;
+    vertical-align: middle;
+    &_big {
+      font-size: @fs-24;
+      color: @col-light-blue;
+      line-height: @lh-28;
+      margin-right: 4px;
+    }
+    &_small {
+      font-size: @fs-14;
+      font-weight: @fw-norm;
+      margin-right: 22px;
+      &-green {
+        color: @col-green;
+      }
+      &-red {
+        color: @col-red;
+      }
+    }
+  }
+}

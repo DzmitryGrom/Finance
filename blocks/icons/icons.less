@@ -46,8 +46,8 @@
 
 .icon-arrow {
   display: inline-block;
-  border-right: 1px solid #9aa5ab;
-  border-bottom: 1px solid #9aa5ab;
+  border-right: 2px solid #9aa5ab;
+  border-bottom: 2px solid #9aa5ab;
   box-sizing: border-box;
   width: 9px;
   height: 9px;
@@ -57,14 +57,34 @@
   position: relative;
   bottom: 2px;
   transition: transform .3s;
-}
-.i-arrow_to_down {
+  &_to-down {
     transform: rotate(45deg);
-}
-.i-arrow_to_up {
+  }
+  &_to-up {
     transform: rotate(-135deg);
+  }
+  &_to-right {
+    transform: rotate(315deg);
+  }
 }
+
 .icon-menu:before {
   content: "\e900";
   color: #d0d7dd;
+}
+.icon-triangle {
+  border: 5px solid transparent;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  &_green {
+    border-bottom: 6px solid @col-green;
+    vertical-align: top;
+    margin-top: 1px;
+  }
+  &_red {
+    border-top: 6px solid @col-red;
+    vertical-align: bottom;
+    margin-bottom: 2px;
+  }
 }
