@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
   position: relative;
   min-height: 100vh;
-  min-width: 1230px;
+  min-width: 860px;
   padding: 0;
   margin: 0;
   background-color: #f4f8f9;
@@ -32,7 +32,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 calc((100% - 1200px) / 2);
+  padding: 0 34px;
   min-height: 55px;
   width: 100%;
 }
@@ -385,7 +385,7 @@ body {
 }
 .main {
   box-sizing: border-box;
-  padding: 34px calc((100% - 1200px) / 2);
+  padding: 34px 60px;
   width: 100%;
 }
 .main > .content {
@@ -399,7 +399,7 @@ body {
   padding: 0;
 }
 .main_one-col {
-  padding: 45px calc((100% - 850px) / 2);
+  padding: 34px 60px;
 }
 .main_one-col .list__item .delete {
   right: 0px;
@@ -660,7 +660,8 @@ body {
 .datagrid__body .row {
   margin-bottom: -1px;
   padding: 14px;
-  border: 1px solid #ecf2f5;
+  border-top: 1px solid #ecf2f5;
+  border-bottom: 1px solid #ecf2f5;
   background-color: #fff;
   align-items: center;
   justify-content: space-between;
@@ -676,7 +677,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   color: #7f8fa4;
 }
 .datagrid__body .row__cell:first-child {
